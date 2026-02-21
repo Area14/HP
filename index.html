@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>株式会社Blue Ocean ホームページデザイン案</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e293b;
+            --secondary: #64748b;
+            --accent: #3b82f6;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+            background-color: var(--bg);
+            color: var(--primary);
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 12px;
+        }
+
+        p.subtitle {
+            color: var(--secondary);
+            font-size: 1.1rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid #e2e8f0;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+            border-color: #cbd5e1;
+        }
+
+        .card-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .card-desc {
+            color: var(--secondary);
+            font-size: 0.95rem;
+            margin-bottom: 24px;
+            flex-grow: 1;
+        }
+
+        .btn {
+            display: inline-block;
+            width: 100%;
+            background-color: var(--accent);
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #2563eb;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 100px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 16px;
+        }
+
+        .badge-idea1 {
+            background-color: #0f172a;
+        }
+
+        .badge-idea2 {
+            background-color: #0284c7;
+        }
+
+        .badge-idea3 {
+            background-color: #f59e0b;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 80px;
+            color: var(--secondary);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>株式会社Blue Ocean<br>ホームページデザイン案</h1>
+            <p class="subtitle">比較・検討用の3パターンのデザインをご用意しました。</p>
+        </header>
+
+        <div class="grid">
+            <!-- Idea 1 -->
+            <div class="card">
+                <div class="card-icon">🌊</div>
+                <div><span class="badge badge-idea1">Idea 1</span></div>
+                <h2 class="card-title">コーポレート・スタンダード</h2>
+                <p class="card-desc">ダークネイビーとゴールドを基調とした、誠実で信頼感のあるスタンダードなBtoB向けデザインです。</p>
+                <a href="idea1/index.html" class="btn" target="_blank" rel="noopener noreferrer">この案を見る &rarr;</a>
+            </div>
+
+            <!-- Idea 2 -->
+            <div class="card">
+                <div class="card-icon">☀️</div>
+                <div><span class="badge badge-idea2">Idea 2</span></div>
+                <h2 class="card-title">オーシャン・ポップ</h2>
+                <p class="card-desc">爽やかなブルーとオレンジを使用し、丸みのあるフォントと波のシェイプで「楽しさ」を表現したモダンなデザインです。</p>
+                <a href="idea2/index.html" class="btn" target="_blank" rel="noopener noreferrer">この案を見る &rarr;</a>
+            </div>
+
+            <!-- Idea 3 -->
+            <div class="card">
+                <div class="card-icon">🧸</div>
+                <div><span class="badge badge-idea3">Idea 3</span></div>
+                <h2 class="card-title">ナチュラル＆ウォーム</h2>
+                <p class="card-desc">クリーム色をベースに、パステルカラー（優しいピンクやグリーン）をアクセントにした、温かみや手作りの優しさを感じるデザインです。</p>
+                <a href="idea3/index.html" class="btn" target="_blank" rel="noopener noreferrer">この案を見る &rarr;</a>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Blue Ocean Inc. Design Concepts</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
