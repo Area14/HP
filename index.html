@@ -4,188 +4,453 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>株式会社Blue Ocean ホームページデザイン案</title>
+    <title>株式会社Blue Ocean｜おもちゃ・ホビー・トレーディングカードの卸売事業</title>
+    <meta name="description"
+        content="株式会社Blue Oceanはおもちゃ、ホビー用品、キャラクターフィギュア、トレーディングカードの国内正規流通商品の卸売およびEC販売事業を展開しています。全国の量販店・専門店様へ多種多様なエンターテインメント商材をお届けします。">
+    <!-- OGP Tags -->
+    <meta property="og:title" content="株式会社Blue Ocean｜おもちゃ・ホビー商材の卸売">
+    <meta property="og:description" content="おもちゃ・ホビー・トレーディングカードの国内正規流通商品の卸売およびEC販売事業を展開。全国のお客様へ多様なエンタメ商材をお届けします。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.blueocean-toy.co.jp/">
+    <meta property="og:image" content="https://www.blueocean-toy.co.jp/images/ogp-image.jpg">
+    <meta property="og:site_name" content="株式会社Blue Ocean">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Quicksand:wght@500;600;700&display=swap"
         rel="stylesheet">
-    <style>
-        :root {
-            --primary: #1e293b;
-            --secondary: #64748b;
-            --accent: #3b82f6;
-            --bg: #f8fafc;
-            --card-bg: #ffffff;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: 'Inter', 'Noto Sans JP', sans-serif;
-            background-color: var(--bg);
-            color: var(--primary);
-            line-height: 1.6;
-            padding: 40px 20px;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        h1 {
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--primary);
-            margin-bottom: 12px;
-        }
-
-        p.subtitle {
-            color: var(--secondary);
-            font-size: 1.1rem;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-        }
-
-        .card {
-            background: var(--card-bg);
-            border-radius: 12px;
-            padding: 30px;
-            text-align: center;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s, box-shadow 0.2s;
-            border: 1px solid #e2e8f0;
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
-            border-color: #cbd5e1;
-        }
-
-        .card-icon {
-            font-size: 3rem;
-            margin-bottom: 20px;
-        }
-
-        .card-title {
-            font-size: 1.25rem;
-            font-weight: 700;
-            margin-bottom: 12px;
-        }
-
-        .card-desc {
-            color: var(--secondary);
-            font-size: 0.95rem;
-            margin-bottom: 24px;
-            flex-grow: 1;
-        }
-
-        .btn {
-            display: inline-block;
-            width: 100%;
-            background-color: var(--accent);
-            color: white;
-            text-decoration: none;
-            padding: 12px 20px;
-            border-radius: 8px;
-            font-weight: 600;
-            transition: background-color 0.2s;
-        }
-
-        .btn:hover {
-            background-color: #2563eb;
-        }
-
-        .badge {
-            display: inline-block;
-            padding: 4px 12px;
-            border-radius: 100px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            color: white;
-            margin-bottom: 16px;
-        }
-
-        .badge-idea1 {
-            background-color: #0f172a;
-        }
-
-        .badge-idea2 {
-            background-color: #0284c7;
-        }
-
-        .badge-idea3 {
-            background-color: #f59e0b;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 80px;
-            color: var(--secondary);
-            font-size: 0.9rem;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="container">
-        <header>
-            <h1>株式会社Blue Ocean<br>ホームページデザイン案</h1>
-            <p class="subtitle">比較・検討用の3パターンのデザインをご用意しました。</p>
-        </header>
+    <!-- ========== HEADER ========== -->
+    <header class="header" id="header">
+        <div class="header__inner">
+            <a href="#" class="header__logo">
+                <div class="header__logo-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12c0 5.52 4.48 10 10 10s10-4.48 10-10C22 6.48 17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z" />
+                    </svg>
+                </div>
+                <span class="header__logo-text">Blue Ocean</span>
+            </a>
+            <nav class="header__nav" id="globalNav">
+                <ul class="header__nav-list">
+                    <li><a href="#about" class="header__nav-link">事業紹介</a></li>
+                    <li><a href="#products" class="header__nav-link">取扱商材</a></li>
+                    <li><a href="#company" class="header__nav-link">会社概要</a></li>
+                    <li><a href="#contact" class="header__nav-link header__nav-link--cta">お問い合わせ</a></li>
+                </ul>
+            </nav>
+            <button class="header__hamburger" id="hamburgerBtn" aria-label="メニューを開く">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
 
-        <div class="grid">
-            <!-- Idea 1 -->
-            <div class="card">
-                <div class="card-icon">🌊</div>
-                <div><span class="badge badge-idea1">Idea 1</span></div>
-                <h2 class="card-title">コーポレート・スタンダード</h2>
-                <p class="card-desc">ダークネイビーとゴールドを基調とした、誠実で信頼感のあるスタンダードなBtoB向けデザインです。</p>
-                <a href="idea1/index.html" class="btn" target="_blank" rel="noopener noreferrer">この案を見る &rarr;</a>
-            </div>
-
-            <!-- Idea 2 -->
-            <div class="card">
-                <div class="card-icon">☀️</div>
-                <div><span class="badge badge-idea2">Idea 2</span></div>
-                <h2 class="card-title">オーシャン・ポップ</h2>
-                <p class="card-desc">爽やかなブルーとオレンジを使用し、丸みのあるフォントと波のシェイプで「楽しさ」を表現したモダンなデザインです。</p>
-                <a href="idea2/index.html" class="btn" target="_blank" rel="noopener noreferrer">この案を見る &rarr;</a>
-            </div>
-
-            <!-- Idea 3 -->
-            <div class="card">
-                <div class="card-icon">🧸</div>
-                <div><span class="badge badge-idea3">Idea 3</span></div>
-                <h2 class="card-title">ナチュラル＆ウォーム</h2>
-                <p class="card-desc">クリーム色をベースに、パステルカラー（優しいピンクやグリーン）をアクセントにした、温かみや手作りの優しさを感じるデザインです。</p>
-                <a href="idea3/index.html" class="btn" target="_blank" rel="noopener noreferrer">この案を見る &rarr;</a>
-            </div>
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+        <div class="hero__bg-wrap">
+            <img src="images/hero.png" alt="おもちゃやホビー商品が並ぶ、ワクワクを届けるBlue Oceanの事業イメージ" class="hero__bg" loading="eager">
+            <div class="hero__overlay"></div>
         </div>
 
-        <footer>
-            <p>&copy; 2026 Blue Ocean Inc. Design Concepts</p>
-        </footer>
-    </div>
+        <div class="hero__content">
+            <p class="hero__sub">Toy &amp; Hobby Distribution</p>
+            <h1 class="hero__title">
+                <span class="text-highlight">ワクワク</span>を届ける、<br class="sp-hide">
+                笑顔の大海原へ。
+            </h1>
+            <p class="hero__desc">
+                私たちBlue Oceanは、最新のホビーから定番のおもちゃまで、<br class="sp-hide">
+                多様なエンターテインメント商材を全国の小売店様へお届けする卸売パートナーです。
+            </p>
+            <a href="#about" class="hero__btn">私たちの事業について</a>
+        </div>
+
+        <!-- Wave divider at bottom of hero -->
+        <div class="hero__wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.06,130.83,120.34,192.51,108.8,236.4,100.58,280.93,76.65,321.39,56.44Z"
+                    fill="#f8fbfd"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header fade-in">
+                <p class="section-label">ABOUT US</p>
+                <h2 class="section-title">事業紹介</h2>
+                <p class="section-lead">
+                    時代のニーズに合わせた柔軟な提案力で、<br>
+                    お客様の売場づくりを総合的にサポートいたします。
+                </p>
+            </div>
+
+            <div class="about__grid">
+                <div class="about__card fade-in">
+                    <div class="about__card-icon-wrap">
+                        <div class="about__card-icon">🎁</div>
+                    </div>
+                    <h3 class="about__card-title">圧倒的な商品力</h3>
+                    <p class="about__card-text">国内外のメーカーから直接仕入れる確かなルート。話題の新作からロングセラー商品まで、小売店様のニーズに確実にお応えするラインナップを誇ります。
+                    </p>
+                </div>
+
+                <div class="about__card fade-in">
+                    <div class="about__card-icon-wrap">
+                        <div class="about__card-icon">🚀</div>
+                    </div>
+                    <h3 class="about__card-title">スピーディーな配送</h3>
+                    <p class="about__card-text">独自の物流ネットワークを構築し、受注から納品までを最短で実現。商機を逃さないスピーディーな対応で、店舗の販売戦略を強力にバックアップします。
+                    </p>
+                </div>
+
+                <div class="about__card fade-in">
+                    <div class="about__card-icon-wrap">
+                        <div class="about__card-icon">🤝</div>
+                    </div>
+                    <h3 class="about__card-title">きめ細かなサポート</h3>
+                    <p class="about__card-text">単なる商品供給にとどまらず、トレンド情報のご提供や効果的な売場キープの提案など、パートナーとして皆様のビジネス成長に貢献します。</p>
+                </div>
+            </div>
+
+            <div class="about__visual fade-in">
+                <img src="images/about.png" alt="全国の小売店様へスピーディーにエンタメ商材をお届けするBlue Oceanの流通インフラとサポート体制" loading="lazy">
+                <div class="about__visual-badge">
+                    <span>Trusted<br>Partner</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PRODUCTS ========== -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header fade-in">
+                <p class="section-label">PRODUCTS</p>
+                <h2 class="section-title">取扱商材</h2>
+                <p class="section-lead">
+                    すべての世代が楽しめる、多岐にわたるカテゴリのアイテムをご用意しています。
+                </p>
+            </div>
+
+            <div class="products__grid">
+                <!-- 1 -->
+                <div class="products__card fade-in">
+                    <div class="products__card-head">
+                        <div class="products__card-emoji">🤖</div>
+                    </div>
+                    <div class="products__card-body">
+                        <h3 class="products__card-title">フィギュア・トイ</h3>
+                        <p class="products__card-text">アニメキャラから特撮ヒーローまで、幅広い年代に向けたアイテム</p>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="products__card fade-in">
+                    <div class="products__card-head">
+                        <div class="products__card-emoji">🃏</div>
+                    </div>
+                    <div class="products__card-body">
+                        <h3 class="products__card-title">トレーディングカード</h3>
+                        <p class="products__card-text">各種人気TCGのパックやデッキ、スリーブなどの周辺サプライ品</p>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="products__card fade-in">
+                    <div class="products__card-head">
+                        <div class="products__card-emoji">🎮</div>
+                    </div>
+                    <div class="products__card-body">
+                        <h3 class="products__card-title">ゲームソフト・機器</h3>
+                        <p class="products__card-text">最新ハードからインディーまで、様々なゲーム関連プロダクト</p>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="products__card fade-in">
+                    <div class="products__card-head">
+                        <div class="products__card-emoji">🧩</div>
+                    </div>
+                    <div class="products__card-body">
+                        <h3 class="products__card-title">パズル・知育玩具</h3>
+                        <p class="products__card-text">お子様の成長を応援する安全基準を満たした教育・知育アイテム</p>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="products__card fade-in">
+                    <div class="products__card-head">
+                        <div class="products__card-emoji">🎲</div>
+                    </div>
+                    <div class="products__card-body">
+                        <h3 class="products__card-title">ボードゲーム</h3>
+                        <p class="products__card-text">ファミリー向けからマニア向けまで、近年人気の集まるアナログゲーム</p>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="products__card fade-in">
+                    <div class="products__card-head">
+                        <div class="products__card-emoji">🧸</div>
+                    </div>
+                    <div class="products__card-body">
+                        <h3 class="products__card-title">ぬいぐるみ・雑貨</h3>
+                        <p class="products__card-text">ファンシーグッズからカプセルトイまで、日常を彩るバラエティ雑貨</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== COMPANY ========== -->
+    <section class="company" id="company">
+        <div class="container">
+            <div class="section-header fade-in">
+                <p class="section-label">COMPANY</p>
+                <h2 class="section-title">会社概要</h2>
+            </div>
+
+            <div class="company__inner fade-in">
+                <div class="company__info">
+                    <h3 class="company__name">株式会社Blue Ocean</h3>
+                    <p class="company__desc">「遊び」を通じた豊かな社会の実現を目指して。</p>
+                </div>
+                <div class="company__table-wrap">
+                    <table class="company__table">
+                        <tbody>
+                            <tr>
+                                <th>設立</th>
+                                <td>平成28年12月5日</td>
+                            </tr>
+                            <tr>
+                                <th>代表者</th>
+                                <td>代表取締役　竹内　翔</td>
+                            </tr>
+                            <tr>
+                                <th>所在地</th>
+                                <td>〒272-0143<br>千葉県市川市相之川4丁目15-6<br>Ｍ．Ｍ．ＳＰＩＲＩＴＳ 4F</td>
+                            </tr>
+                            <tr>
+                                <th>電話番号</th>
+                                <td>047-329-2365</td>
+                            </tr>
+                            <tr>
+                                <th>事業内容</th>
+                                <td>
+                                    玩具・ホビー用品・トレーディングカード・キャラクターフィギュア等の国内正規流通商品の卸売および国内EC販売事業<br>
+                                    ホビー関連商品の流通企画・販売支援事業
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>主要取引先</th>
+                                <td>
+                                    全国量販店<br>
+                                    ホビー専門店<br>
+                                    トレーディングカード専門店<br>
+                                    アミューズメント関連事業者<br>
+                                    国内EC販売事業者 各社様
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>主な取扱<br>メーカー例<br><span
+                                        style="font-size: 0.8em; font-weight: normal;">(国内正規流通商品)</span></th>
+                                <td>
+                                    バンダイ、BANDAI SPIRITS、タカラトミー、タカラトミーアーツ、コナミ、ブシロード、セガ、セガ
+                                    フェイブ、フリュー、タイトー、グッドスマイルカンパニー、マックスファクトリー、壽屋、アルター、メディコム・トイ、アニプレックス、KADOKAWA、スクウェア・エニックス、カプコン、SNK、エポック社、ハピネット、三英貿易、ケンエレファント、海洋堂、ホットトイズ、ハズブロ、マテル、任天堂、ソニー・インタラクティブエンタテインメント、マイクロソフト、アークライト、ホビージャパン、グルーヴ、リーメント、バンプレスト、ピーナッツ・クラブ、メガハウス、プライム1スタジオ、千値練、アオシマ、童友社、トミーテック、ユニオンクリエイティブ、ベルファイン、ファット・カンパニー、FREEing、ブロッコリー、グッドスマイルレーシング、ディーステージ
+                                    ほか<br>
+                                    <span
+                                        style="font-size: 0.85em; color: #666; display: inline-block; margin-top: 5px;">※上記は主な取扱メーカー例です。国内正規流通商品を取り扱っております。</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="contact" id="contact">
+        <div class="contact__wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45,4.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                    fill="#ffffff"></path>
+            </svg>
+        </div>
+
+        <div class="container contact__content">
+            <div class="section-header fade-in">
+                <p class="section-label section-label--white">CONTACT</p>
+                <h2 class="section-title section-title--white">お問い合わせ</h2>
+                <p class="section-lead section-lead--white">
+                    新規お取引のご相談や商品に関するお問い合わせは、<br>
+                    以下の窓口よりお気軽にご連絡ください。
+                </p>
+            </div>
+
+            <div class="contact__grid-phone fade-in">
+                <div class="contact__form-wrap fade-in">
+                    <form action="#" method="POST" class="contact__form">
+                        <div class="contact__form-group">
+                            <label for="companyName">貴社名／店舗名</label>
+                            <input type="text" id="companyName" name="companyName" placeholder="株式会社Blue Ocean">
+                        </div>
+
+                        <div class="contact__form-row">
+                            <div class="contact__form-group">
+                                <label for="contactName">お名前 <span class="required">必須</span></label>
+                                <input type="text" id="contactName" name="contactName" placeholder="山田 太郎" required>
+                            </div>
+                            <div class="contact__form-group">
+                                <label for="contactEmail">メールアドレス <span class="required">必須</span></label>
+                                <input type="email" id="contactEmail" name="contactEmail" placeholder="info@example.com"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="contact__form-group">
+                            <label for="contactType">お問い合わせ種別 <span class="required">必須</span></label>
+                            <div class="contact__form-select-wrap">
+                                <select id="contactType" name="contactType" required>
+                                    <option value="" hidden>選択してください</option>
+                                    <option value="新規お取引のご相談">新規お取引のご相談</option>
+                                    <option value="商品に関するお問い合わせ">商品に関するお問い合わせ</option>
+                                    <option value="その他">その他</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="contact__form-group">
+                            <label for="contactMessage">お問い合わせ内容 <span class="required">必須</span></label>
+                            <textarea id="contactMessage" name="contactMessage" rows="5" placeholder="ご質問やご相談内容をご記入ください"
+                                required></textarea>
+                        </div>
+
+                        <div class="contact__form-submit">
+                            <button type="submit" class="contact__submit-btn">送信する</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact__card">
+                    <div class="contact__card-icon">📞</div>
+                    <h3 class="contact__card-title">お電話でのお問い合わせ</h3>
+                    <p class="contact__card-text">047-329-2365</p>
+                    <p class="contact__card-note">平日 10:00 - 18:00（土日祝・休）</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brand">
+                    <a href="#" class="footer__logo">
+                        <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12c0 5.52 4.48 10 10 10s10-4.48 10-10C22 6.48 17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z" />
+                        </svg>
+                        <span class="footer__logo-text">Blue Ocean</span>
+                    </a>
+                    <p class="footer__desc">笑顔の波を、世界中に。</p>
+                </div>
+
+                <ul class="footer__nav">
+                    <li><a href="#about">ABOUT US</a></li>
+                    <li><a href="#products">PRODUCTS</a></li>
+                    <li><a href="#company">COMPANY</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copy">&copy; 2026 Blue Ocean Inc. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== SCRIPTS ========== -->
+    <script>
+        // --- Sticky & Transparent Header ---
+        const header = document.getElementById('header');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 80) {
+                header.classList.add('is-scrolled');
+            } else {
+                header.classList.remove('is-scrolled');
+            }
+        });
+
+        // --- Hamburger Menu ---
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const globalNav = document.getElementById('globalNav');
+        const navLinks = document.querySelectorAll('.header__nav-link');
+
+        hamburgerBtn.addEventListener('click', () => {
+            hamburgerBtn.classList.toggle('is-active');
+            globalNav.classList.toggle('is-open');
+            document.body.classList.toggle('nav-open');
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburgerBtn.classList.remove('is-active');
+                globalNav.classList.remove('is-open');
+                document.body.classList.remove('nav-open');
+            });
+        });
+
+        // --- Smooth Scroll ---
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                const target = document.querySelector(targetId);
+                if (target) {
+                    const headerHeight = 80;
+                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // --- Intersection Observer for Animations ---
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px 0px -50px 0px',
+            threshold: 0.15
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
 
 </body>
 
